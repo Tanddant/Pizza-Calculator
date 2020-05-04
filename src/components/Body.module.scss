@@ -1,16 +1,29 @@
 .BodyWrapper {
-  background-color: #282c34;
-  min-height: calc(100vh - 20px);
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+    background-color: #282c34;
+    min-height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .copyright {
-  margin: 10px;
-  text-align: center;
+    margin: 10px;
+    text-align: center;
+    
+    color: #d0d0d0;
 }
 
 .fill {
-  flex-grow: 1;
+    flex-grow: 1;
+}
+
+a:visited {
+    color: #d0d0d0;
+}
+a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }

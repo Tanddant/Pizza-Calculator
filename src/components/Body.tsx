@@ -24,7 +24,7 @@ export default class Body extends React.Component<IBodyProps, IBodyState> {
                     <p>Når du har fundet alle dine ingreienser skal vi til det sjove</p>
                 </div> */}
                 <div className={styles.fill} />
-                <div className={styles.copyright} >&copy; {new Date().getFullYear()} - Dan Toft</div>
+                <div className={styles.copyright} >&copy; {new Date().getFullYear()} - <a href={"https://pcdan.dk/"}>Dan Toft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href={"https://github.com/Tanddant/Pizza-Calculator"}>Source code</a></div>
             </div>
         );
     }
