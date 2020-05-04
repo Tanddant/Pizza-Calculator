@@ -1,0 +1,16 @@
+.BodyWrapper {
+  background-color: #282c34;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.copyright {
+  margin: 10px;
+  text-align: center;
+}
+
+.fill {
+  flex-grow: 1;
+}
