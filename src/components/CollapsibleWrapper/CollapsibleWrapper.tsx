@@ -23,19 +23,19 @@ export default class CollapsibleWrapper extends React.Component<ICollapsibleWrap
 
     public render(): React.ReactElement<ICollapsibleWrapperState> {
         return (
-            <div>
+            <div className={styles.CollapsibleWrapper}>
                 <div className={styles.controls} onClick={() => { this.setState({ isOpen: !this.state.isOpen }) }}>
                     <span className={styles.header}>{this.props.title}</span>
-                    <Icon 
-                    iconName={"ChevronLeftMed"} 
-                    style={{transform:`rotate(${this.state.isOpen ? "-90deg" : "0"})`}}
-                    className={styles.arrow}
+                    <Icon
+                        iconName={"ChevronLeftMed"}
+                        style={{ transform: `rotate(${this.state.isOpen ? "-90deg" : "0"})` }}
+                        className={styles.arrow}
                     />
                 </div>
                 <div
                     className={styles.Collapsible}
                     style={{
-                        transform: `scaleY(${this.state.isOpen ? 1 : 0})`
+                        maxHeight: `${this.state.isOpen ? "1000px" : "0px"}`
                     }}
                 >
                     {this.props.children}

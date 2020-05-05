@@ -1,8 +1,3 @@
-.Collapsible {
-    transform-origin: top;
-    transition: transform 0.26s ease;
-}
-
 .header {
     font-size: 18px;
     font-weight: 600;
@@ -11,9 +6,26 @@
 .controls{
     display: flex;
     justify-content: space-between;
+
 }
 
 .arrow {
     transition: transform 0.26s ease;
     transform-origin: center;
+}
+
+.CollapsibleWrapper{
+    border: 1px solid #d0d0d0; 
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.CollapsibleWrapper:hover{
+    border-color: white;
+}
+
+.Collapsible {
+    transform-origin: top;
+    transition:max-height 0.26s ease-in-out;
+    overflow: hidden;
 }
