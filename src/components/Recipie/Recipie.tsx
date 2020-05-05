@@ -1,6 +1,6 @@
 import * as React from 'react';
-import styles from './Recipie.module.scss';
-import { Label } from '@fluentui/react';
+//import styles from './Recipie.module.scss';
+
 
 export interface IRecipieProps {
 }
@@ -19,10 +19,7 @@ export default class Recipie extends React.Component<IRecipieProps, IRecipieStat
 
     public render(): React.ReactElement<IRecipieState> {
         return (
-            <div className={styles.wrapper}>
-                <span className={styles.header} onClick={() => {this.text.current.style.transform = "scaleY(1)"}}>Nu har jeg ingredienser, hvad så?</span>
-
-                <div ref={this.text} id={"text"} className={styles.text}>    
+                <div>    
                     <p>
                         Når du har fundet alle dine ingredienser, skal vi til det sjove, at lave din pizza!
                         <br />
@@ -103,7 +100,6 @@ export default class Recipie extends React.Component<IRecipieProps, IRecipieStat
                         <br />
                     </p>
                 </div>
-            </div >
         );
     }
 }

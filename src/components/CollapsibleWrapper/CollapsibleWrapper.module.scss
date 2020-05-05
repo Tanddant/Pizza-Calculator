@@ -1,0 +1,19 @@
+.Collapsible {
+    transform-origin: top;
+    transition: transform 0.26s ease;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    transition: transform 0.26s ease;
+    transform-origin: center;
+}

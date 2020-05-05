@@ -1,12 +1,12 @@
 import * as React from 'react';
 import styles from './Calculator.module.scss';
 import { TextField, Dropdown, IDropdownOption, Label } from '@fluentui/react';
-import { IDoughSettingsString } from '../models/IDoughSettings';
-import { IDoughProvider, DoughProvider } from '../providers/DoughProvider';
-import yeast from '../assets/yeast_white.png'
-import salt from '../assets/salt_white.png'
-import water from '../assets/water_white.png'
-import flour from '../assets/flour_white.png'
+import { IDoughSettingsString } from '../../models/IDoughSettings';
+import { IDoughProvider, DoughProvider } from '../../providers/DoughProvider';
+import yeast from '../../assets/yeast_white.png'
+import salt from '../../assets/salt_white.png'
+import water from '../../assets/water_white.png'
+import flour from '../../assets/flour_white.png'
 
 export interface ICalculatorProps {
 }

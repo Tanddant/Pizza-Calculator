@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Fabric, Customizer, loadTheme } from '@fluentui/react';
-import Body from './components/Body';
+import { Fabric, Customizer, loadTheme, initializeIcons } from '@fluentui/react';
+import Body from './components/Body/Body';
 
 loadTheme({
   palette: {
@@ -30,6 +30,7 @@ loadTheme({
   }
 });
 
+initializeIcons()
 
 function App() {
   return (
