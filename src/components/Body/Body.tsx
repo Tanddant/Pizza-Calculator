@@ -18,7 +18,7 @@ export default class Body extends React.Component<IBodyProps, IBodyState> {
                 <br />
 
                 <div className={styles.CollapsibleArea}>
-                    <CollapsibleWrapper title={"Nu har jeg ingredienser, hvad så?"} >
+                    <CollapsibleWrapper title={"Nu har jeg ingredienserne, hvad så?"} >
                         <Recipie />
                     </CollapsibleWrapper>
                 </div>
