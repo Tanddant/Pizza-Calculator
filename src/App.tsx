@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Fabric, Customizer, loadTheme, initializeIcons } from '@fluentui/react';
 import Body from './components/Body/Body';
 
