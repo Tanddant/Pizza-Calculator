@@ -18,12 +18,12 @@ export default class Body extends React.Component<IBodyProps, IBodyState> {
                 <br />
 
                 <div className={styles.CollapsibleArea}>
-                    <CollapsibleWrapper title={"Nu har jeg ingredienserne, hvad så?"} >
+                    <CollapsibleWrapper title={"Nu har jeg ingredienserne, hvad så nu?"} >
                         <Recipie />
                     </CollapsibleWrapper>
                 </div>
                 <div className={styles.fill} />
-                <div className={styles.copyright} >&copy; {new Date().getFullYear()} - <a href={"https://pcdan.dk/"}>Dan Toft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href={"https://github.com/Tanddant/Pizza-Calculator"}>Source code</a></div>
+                <div className={styles.copyright} >&copy; {new Date().getFullYear()}&nbsp;&nbsp;|&nbsp;&nbsp;<a href={"https://pcdan.dk/"}>Dan Toft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href={"https://github.com/Tanddant/Pizza-Calculator"}>Source code</a></div>
             </div>
         );
     }

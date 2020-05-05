@@ -11,9 +11,11 @@ export interface ICollapsibleWrapperState {
 }
 
 export default class CollapsibleWrapper extends React.Component<ICollapsibleWrapperProps, ICollapsibleWrapperState> {
+    private ref: any;
 
     constructor(props: ICollapsibleWrapperProps) {
         super(props);
+        this.ref = React.createRef();
 
         this.state = {
             isOpen: false
@@ -22,6 +24,10 @@ export default class CollapsibleWrapper extends React.Component<ICollapsibleWrap
     }
 
     public render(): React.ReactElement<ICollapsibleWrapperState> {
+        let height = 0;
+        if(this.ref.current)
+            height = this.ref.current.scrollHeight
+
         return (
             <div className={styles.CollapsibleWrapper}>
                 <div className={styles.controls} onClick={() => { this.setState({ isOpen: !this.state.isOpen }) }}>
@@ -34,8 +40,9 @@ export default class CollapsibleWrapper extends React.Component<ICollapsibleWrap
                 </div>
                 <div
                     className={styles.Collapsible}
+                    ref={this.ref}
                     style={{
-                        maxHeight: `${this.state.isOpen ? "1000px" : "0px"}`
+                        maxHeight: `${this.state.isOpen ? `${height}px` : "0px"}`
                     }}
                 >
                     {this.props.children}

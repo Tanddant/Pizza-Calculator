@@ -8,6 +8,7 @@
     justify-content: space-between;
     position: relative;
     user-select: none;
+    cursor: pointer;
 }
 
 .arrow {
@@ -31,6 +32,6 @@
 
 .Collapsible {
     transform-origin: right;
-    transition:max-height 0.26s ease-in-out;
+    transition:max-height 0.5s ease-in-out;
     overflow: hidden;
 }
