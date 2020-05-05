@@ -1,21 +1,36 @@
-.BodyWrapper {
+.Background {
     background-color: #282c34;
-    min-height: calc(100vh - 20px);
-    display: flex;
-    flex-direction: column;
     padding: 10px;
 }
 
-.fill{
+.BodyWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 20px);
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.headerText {
+    font-size: 35px;
+    text-align: center;
+}
+
+.subHeader{
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.fill {
     flex-grow: 1;
 }
 
 .copyright {
     text-align: center;
     color: #d0d0d0;
-    width: 100%;
-    background-color: #282c34;
-    padding: 10px 0;
 }
 
 
@@ -30,11 +45,4 @@ a:hover {
 a {
     color: #d0d0d0;
     text-decoration: none;
-}
-
-.CollapsibleArea{
-    max-width: 640px;
-    width: 100%;
-    margin: auto;
-    margin-top: 40px;
 }
