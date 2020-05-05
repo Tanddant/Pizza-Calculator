@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styles from './Body.module.scss';
 import Calculator from './Calculator';
+import Recipie from './Recipie';
 
 export interface IBodyProps {
 }
@@ -19,10 +20,7 @@ export default class Body extends React.Component<IBodyProps, IBodyState> {
             <div className={styles.BodyWrapper}>
                 <Calculator />
                 <br />
-{/*                 <div style={{ margin: "auto" }}>
-                    Nu har jeg ingredienserne, hvad så?
-                    <p>Når du har fundet alle dine ingreienser skal vi til det sjove</p>
-                </div> */}
+                <Recipie />
                 <div className={styles.fill} />
                 <div className={styles.copyright} >&copy; {new Date().getFullYear()} - <a href={"https://pcdan.dk/"}>Dan Toft</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href={"https://github.com/Tanddant/Pizza-Calculator"}>Source code</a></div>
             </div>

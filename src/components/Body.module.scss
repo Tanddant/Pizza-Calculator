@@ -6,19 +6,23 @@
     padding: 10px;
 }
 
-.copyright {
-    margin: 10px;
-    text-align: center;
-    color: #d0d0d0;
-}
-
-.fill {
+.fill{
     flex-grow: 1;
 }
+
+.copyright {
+    text-align: center;
+    color: #d0d0d0;
+    width: 100%;
+    background-color: #282c34;
+    padding: 10px 0;
+}
+
 
 a:visited {
     color: #d0d0d0;
 }
+
 a:hover {
     color: white;
 }
